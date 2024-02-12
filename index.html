@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Etch-a-sketch</title>
+</head>
+<body>
+
+<header>
+  <h1 id="page-title">
+    Etch-a-sketch
+  </h1>
+</header>
+
+<main>
+  <div id="settings">
+    <input type="color" id="colorPicker">
+    <button id="colorMode" class="buttons">Use color selected</button>
+    <button id="rainbowMode" class="buttons">Rainbow mode</button>
+    <button id="eraser" class="buttons">Use eraser</button>
+    <button id="clearAll" class="buttons buttons-morePadding">Clear all</button>
+      <div id="range-display">Chose size:</div>
+      <input type="range" id="range" value="1" min="1" max="64">
+    </div>
+  </div>
+
+  <div id="grid">
+    <div class="gridWaitingScreen">
+      <p>Choose a grid size to start painting!</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>
+    Copyright © 2023 The Odin Project
+  </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
